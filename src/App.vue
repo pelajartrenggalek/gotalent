@@ -13,7 +13,7 @@ import { timeline } from "./timeline.js"
 
       <div class="w-full mb-5 border-1 border-white/30 rounded-2xl overflow-hidden">
         <img src="./header.jpg" alt="Cover" class="w-full">
-        <p class="text-center text-xl font-bold text-shadow-lg pt-5 py-6 bg-white/10 backdrop-blur-sm">
+        <p class="text-center text-xl font-bold text-shadow-lg pt-5 py-6 px-3 bg-white/10 backdrop-blur-sm">
           Dalam Rangka Harlah IPNU 72 - IPPNU 71
         </p>
       </div>
