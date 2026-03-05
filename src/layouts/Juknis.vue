@@ -26,7 +26,7 @@ const props = defineProps({
         <div class="w-full max-w-2xl space-y-4">
             <div v-for="(item, key) in accordionData" :key="key"
                 class="glass border border-white/15 rounded-2xl overflow-hidden transition-all duration-500"
-                :class="activeKey === key ? 'bg-white/10 shadow-[0_0_20px_rgba(16,185,129,0.2)]' : 'bg-white/5 hover:bg-white/10'">
+                :class="activeKey === key ? 'bg-white/10' : 'bg-white/5 hover:bg-white/10'">
                 <button @click="toggle(key)"
                     class="w-full flex items-center justify-between p-5 cursor-pointer text-left">
                     <span class="flex items-center gap-4">

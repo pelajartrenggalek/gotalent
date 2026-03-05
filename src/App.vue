@@ -27,6 +27,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: url('./bg.webp') center center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 .bg {
@@ -34,8 +35,8 @@ body {
     background: linear-gradient(-45deg, #06344e, #06255f, #06162c, #060c2c);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: -1;
 }
