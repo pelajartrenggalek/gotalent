@@ -3,16 +3,20 @@
 const props = defineProps({
     text: String,
     url: String,
-    disabled: Boolean
+    disabled: Boolean,
+    external: Boolean
 })
 
 </script>
 
 <template>
-    <a v-if="!disabled" :href="url" target="_blank" class="linkbtn block glass text-center p-4 rounded-xl">
-        {{ text }}
-    </a>
-    <div v-else class="glass text-center p-4 rounded-xl opacity-50 cursor-not-allowed">
+    <div v-if="disabled" class="glass text-center p-4 rounded-xl opacity-50 cursor-not-allowed">
         {{ text }}
     </div>
+    <a v-else-if="external" :href="url" target="_blank" class="linkbtn block glass text-center p-4 rounded-xl">
+        {{ text }}
+    </a>
+    <RouterLink v-else :to="url" class="linkbtn block glass text-center p-4 rounded-xl">
+        {{ text }}
+    </RouterLink>
 </template>
