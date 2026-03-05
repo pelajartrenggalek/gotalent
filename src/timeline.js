@@ -1,15 +1,9 @@
 export const timeline = {
     pendaftaran: {
         title: "Pendaftaran",
-        dateString: "5 – 10 Maret",
-        date: new Date("2026-03-10"),
-        link: "https://docs.google.com/forms/d/e/1FAIpQLScXxXg9jE8p9RRlYOu2fPM2QCnDCPDDyOS5WrjjtSuZeejk5Q/viewform?usp=publish-editor"
-    },
-    pengumpulanKarya: {
-        title: "Pengumpulan Karya",
-        dateString: "07 – 12 Maret",
+        dateString: "5 – 12 Maret",
         date: new Date("2026-03-12"),
-        link: "#"
+        link: "https://docs.google.com/forms/d/e/1FAIpQLScXxXg9jE8p9RRlYOu2fPM2QCnDCPDDyOS5WrjjtSuZeejk5Q/viewform?usp=publish-editor"
     },
     penilaian: {
         title: "Penilaian Karya",

@@ -11,8 +11,11 @@ import { timeline } from "./timeline.js"
   <div class="text-white flex justify-center min-h-screen">
     <div class="max-w-2xl w-full p-5">
 
-      <div class="w-full mb-5">
-        <img src="./header.jpg" alt="Cover" class="w-full rounded-t-2xl">
+      <div class="w-full mb-5 border-1 border-white/30 rounded-2xl overflow-hidden">
+        <img src="./header.jpg" alt="Cover" class="w-full">
+        <p class="text-center text-xl font-bold text-shadow-lg pt-5 py-6 bg-white/10 backdrop-blur-sm">
+          Dalam Rangka Harlah IPNU 72 - IPPNU 71
+        </p>
       </div>
 
       <Time />
@@ -25,7 +28,7 @@ import { timeline } from "./timeline.js"
           <div class="flex items-start gap-3">
             <div class="w-3 h-3 bg-yellow-400 rounded-full mt-1"></div>
             <div>
-              <b>Pendaftaran</b><br>
+              <b>Pendaftaran dan Pengumpulan Karya</b><br>
               <div class="py-[2px] px-3 bg-white/30 text-shadow-lg rounded-lg inline-block mt-1">{{
                 timeline.pendaftaran.dateString }}
               </div>
@@ -34,16 +37,7 @@ import { timeline } from "./timeline.js"
           <div class="flex items-start gap-3">
             <div class="w-3 h-3 bg-yellow-400 rounded-full mt-1"></div>
             <div>
-              <b>Pengumpulan Karya</b><br>
-              <div class="py-[2px] px-3 bg-white/30 text-shadow-lg rounded-lg inline-block mt-1">
-                {{ timeline.pengumpulanKarya.dateString }}
-              </div>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-3 h-3 bg-yellow-400 rounded-full mt-1"></div>
-            <div>
-              <b>Penilaian</b><br>
+              <b>Penilaian Karya</b><br>
               <div class="py-[2px] px-3 bg-white/30 text-shadow-lg rounded-lg inline-block mt-1">
                 {{ timeline.penilaian.dateString }}
               </div>
@@ -65,10 +59,8 @@ import { timeline } from "./timeline.js"
       </div>
 
       <div class="space-y-4 mb-10">
-        <PrimaryButton text="Daftar Peserta" :url="timeline.pendaftaran.link" />
-
-        <Button text="📖 Upload Karya Kultum Ramadhan" disabled url="#" />
-        <Button text="📖 Upload Karya Single Song" disabled url="#" class="mb-8" />
+        <PrimaryButton text="📝 Daftar & Pengumpulan Karya" :url="timeline.pendaftaran.link" />
+        <Button text="🏆 Hasil Penjurian Karya" disabled url="#" />
 
         <Button text="📄 Download TOR Lomba" disabled url="#" />
         <Button text="🎨 Download Asset Harlah" disabled url="#" />

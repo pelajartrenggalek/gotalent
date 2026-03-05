@@ -44,7 +44,7 @@ onUnmounted(() => {
 <template>
     <div class="glass rounded-2xl p-5 mb-8 text-center">
         <h2 class="font-semibold mb-3">
-            ⏳ Batas Pendaftaran
+            ⏳ Batas Pendaftaran dan Pengumpulan
         </h2>
         <div class="grid grid-cols-4 gap-3 text-center">
             <div class="glass rounded-lg p-2">
