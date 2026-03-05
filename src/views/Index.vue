@@ -70,6 +70,10 @@ import { timeline } from "../timeline.js"
     <Button text="🎨 Download Asset Harlah" disabled external url="#" />
   </div>
 
+  <a href="/flyer.webp" class="glass rounded-2xl mb-8 overflow-hidden block">
+    <img src="/flyer.webp" alt="">
+  </a>
+
   <div class="glass rounded-2xl p-6 text-center">
     <h2 class="font-semibold mb-3">
       ☎ Narahubung
